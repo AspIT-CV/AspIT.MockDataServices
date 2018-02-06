@@ -88,6 +88,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AspIT.MockDataServices.DB\AspIT.MockDataServices.DB.csproj">
+      <Project>{ef3c98b4-535c-48e3-8988-55c931656685}</Project>
+      <Name>AspIT.MockDataServices.DB</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AspIT.MockDataServices.Entities\AspIT.MockDataServices.Entities.csproj">
       <Project>{c446ee31-3898-48bd-b418-786205d77209}</Project>
       <Name>AspIT.MockDataServices.Entities</Name>

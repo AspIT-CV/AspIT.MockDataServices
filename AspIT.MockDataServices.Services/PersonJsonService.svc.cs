@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using Newtonsoft.Json;
 using AspIT.MockDataServices.Entities;
+using AspIT.MockDataServices.DB;
 
 namespace AspIT.MockDataServices.Services
 {
@@ -14,16 +15,8 @@ namespace AspIT.MockDataServices.Services
     {
         public string GetAllPeople()
         {
-            // TODO: Refactor when done testing
-            string connectionString = @"Data Source = CVDB3, 1444; Initial Catalog = MockDataDB; Integrated Security = True;";
-            string sql = "SELECT FirstName,LastName FROM DanishNames";
-            DataSet dataSet = new DataSet();
-
-            // Connect to database
-            using(SqlDataAdapter adapter = new SqlDataAdapter(new SqlCommand(sql, new SqlConnection(connectionString))))
-            {
-                adapter.Fill(dataSet);
-            }
+            SqlExecutor sqlExecutor = new SqlExecutor();
+            DataSet dataSet = sqlExecutor.Execute("SELECT FirstName,LastName FROM DanishNames");
 
             string jsonPeople = string.Empty;
             DataRowCollection rows = dataSet.Tables[0].Rows;
