@@ -14,7 +14,7 @@ namespace AspIT.MockDataServices.DB
 
         public SqlExecutor()
         {
-            connectionString = @"Data Source = CVDB3, 1444; Initial Catalog = MockDataDB; User Id=cv\jesp6763 Integrated Security = True;";
+            connectionString = @"Data Source = CVDB3, 1444; Initial Catalog = MockDataDB; Integrated Security = True;";
         }
 
         public DataSet Execute(string sql)
