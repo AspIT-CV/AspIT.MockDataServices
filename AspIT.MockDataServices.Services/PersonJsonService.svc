@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="AspIT.MockDataServices.Services.PersonJsonService" CodeBehind="PersonJsonService.svc.cs" %>

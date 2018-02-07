@@ -12,13 +12,13 @@ namespace AspIT.MockDataServices.Services
     /// <summary>
     /// Represents a WCF Service that is responsible for returning stuff in JSON format/>
     /// </summary>
-    public class PersonJsonService : IPersonJsonService
+    public class MockNamesJsonService : IMockNamesJsonService
     {
         /// <summary>
         /// Selects all names from the DanishNames table, and then returns the names in JSON format.
         /// </summary>
         /// <returns>The names in JSON format</returns>
-        public string GetAllDanishMockNames()
+        public string GetAllDanishNames()
         {
             SqlExecutor sqlExecutor = new SqlExecutor();
             DataSet dataSet = sqlExecutor.Execute("SELECT FirstName,LastName FROM DanishNames");
