@@ -4,3 +4,9 @@ C:\VS Dev Projecter\Visual Studio 2017\Projects\AspIT.MockDataServices\AspIT.Moc
 C:\VS Dev Projecter\Visual Studio 2017\Projects\AspIT.MockDataServices\AspIT.MockDataServices.Entities\obj\Debug\AspIT.MockDataServices.Entities.csproj.CoreCompileInputs.cache
 C:\VS Dev Projecter\Visual Studio 2017\Projects\AspIT.MockDataServices\AspIT.MockDataServices.Entities\obj\Debug\AspIT.MockDataServices.Entities.dll
 C:\VS Dev Projecter\Visual Studio 2017\Projects\AspIT.MockDataServices\AspIT.MockDataServices.Entities\obj\Debug\AspIT.MockDataServices.Entities.pdb
+D:\Documents\Github Repos\Jesp6763\AspIT.MockDataServices\AspIT.MockDataServices.Entities\bin\Debug\AspIT.MockDataServices.Entities.dll
+D:\Documents\Github Repos\Jesp6763\AspIT.MockDataServices\AspIT.MockDataServices.Entities\bin\Debug\AspIT.MockDataServices.Entities.pdb
+D:\Documents\Github Repos\Jesp6763\AspIT.MockDataServices\AspIT.MockDataServices.Entities\obj\Debug\AspIT.MockDataServices.Entities.csprojResolveAssemblyReference.cache
+D:\Documents\Github Repos\Jesp6763\AspIT.MockDataServices\AspIT.MockDataServices.Entities\obj\Debug\AspIT.MockDataServices.Entities.csproj.CoreCompileInputs.cache
+D:\Documents\Github Repos\Jesp6763\AspIT.MockDataServices\AspIT.MockDataServices.Entities\obj\Debug\AspIT.MockDataServices.Entities.dll
+D:\Documents\Github Repos\Jesp6763\AspIT.MockDataServices\AspIT.MockDataServices.Entities\obj\Debug\AspIT.MockDataServices.Entities.pdb

@@ -14,7 +14,7 @@ namespace AspIT.MockDataServices.Services
     {
 
         [OperationContract]
-        string GetAllPeople();
+        string GetAllDanishMockNames();
 
         // TODO: Add your service operations here
     }
