@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
+using System.Web.Configuration;
 
 namespace AspIT.MockDataServices.DB
 {
@@ -14,7 +16,11 @@ namespace AspIT.MockDataServices.DB
 
         public SqlExecutor()
         {
-            connectionString = @"Data Source = CVDB3, 1444; Initial Catalog = MockDataDB;";
+            string connsString = ConfigurationManager.ConnectionStrings["DbConnection"].ConnectionString;
+            if(connsString != string.Empty)
+            {
+                connectionString = connsString;
+            }
         }
 
         public DataSet Execute(string sql)
