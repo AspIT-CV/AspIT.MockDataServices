@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using AspIT.MockDataServices.Entities;
 using AspIT.MockDataServices.DB;
+using System.ServiceModel;
 
 namespace AspIT.MockDataServices.Services
 {
@@ -18,6 +19,32 @@ namespace AspIT.MockDataServices.Services
         {
             SqlExecutor sqlExecutor = new SqlExecutor();
             DataSet dataSet = sqlExecutor.Execute("SELECT FirstName,LastName FROM DanishNames");
+
+            string jsonPeople = string.Empty;
+            DataRowCollection rows = dataSet.Tables[0].Rows;
+            Person[] people = new Person[rows.Count];
+
+            for(int i = 0; i < rows.Count; i++)
+            {
+                DataRow row = rows[i];
+                people[i] = new Person(row.Field<string>("FirstName"), row.Field<string>("LastName"));
+            }
+
+            jsonPeople = JsonConvert.SerializeObject(people);
+
+            // Return json data
+            return jsonPeople;
+        }
+
+        /// <summary>
+        /// Selects the amount of names specified from the DanishNames table, and then returns the names in JSON format.
+        /// </summary>
+        /// <returns>The names in JSON format</returns>
+        /// <param name="amount">How many names to select.</param>
+        public string GetDanishNames(int amount)
+        {
+            SqlExecutor sqlExecutor = new SqlExecutor();
+            DataSet dataSet = sqlExecutor.Execute($"SELECT TOP {amount} FirstName,LastName FROM DanishNames");
 
             string jsonPeople = string.Empty;
             DataRowCollection rows = dataSet.Tables[0].Rows;

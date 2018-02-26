@@ -12,8 +12,19 @@ namespace AspIT.MockDataServices.Services
     [ServiceContract]
     public interface IMockNamesJsonService
     {
-
+        /// <summary>
+        /// Selects all names from the DanishNames table, and then returns the names in JSON format.
+        /// </summary>
+        /// <returns>The names in JSON format</returns>
         [OperationContract]
         string GetAllDanishNames();
+
+        /// <summary>
+        /// Selects the amount of names specified from the DanishNames table, and then returns the names in JSON format.
+        /// </summary>
+        /// <returns>The names in JSON format</returns>
+        /// <param name="amount">How many names to select.</param>
+        [OperationContract]
+        string GetDanishNames(int amount);
     }
 }
