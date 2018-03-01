@@ -24,8 +24,8 @@ namespace AspIT.MockDataServices.Entities
         /// <summary>
         /// Initializes a new instance of the <see cref="Person"/> class.
         /// </summary>
-        /// <param name="firstName"></param>
-        /// <param name="lastName"></param>
+        /// <param name="firstName">The first name.</param>
+        /// <param name="lastName">The last name.</param>
         public Person(string firstName, string lastName)
         {
             FirstName = firstName;
