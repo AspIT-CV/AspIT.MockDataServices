@@ -65,16 +65,16 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MockNamesJsonService.svc" />
+    <Content Include="MockDataService.svc" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MockNamesJsonService.svc.cs">
-      <DependentUpon>MockNamesJsonService.svc</DependentUpon>
+    <Compile Include="MockDataService.svc.cs">
+      <DependentUpon>MockDataService.svc</DependentUpon>
     </Compile>
-    <Compile Include="IMockNamesJsonService.cs" />
+    <Compile Include="IMockDataService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
